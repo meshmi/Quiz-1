@@ -3,7 +3,7 @@
 //  Quiz
 //
 //  Created by Bryan Robinson on 6/8/15.
-//  Copyright (c) 2015 LDS Missionary. All rights reserved.
+//  Copyright (c) 2015 Bryan Robinson. All rights reserved.
 //
 
 import UIKit

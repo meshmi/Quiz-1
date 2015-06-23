@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8E2268601B25DD83003804B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E22685F1B25DD83003804B1 /* AppDelegate.swift */; };
-		8E2268621B25DD83003804B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2268611B25DD83003804B1 /* ViewController.swift */; };
+		8E2268621B25DD83003804B1 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2268611B25DD83003804B1 /* QuizViewController.swift */; };
 		8E2268651B25DD83003804B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2268631B25DD83003804B1 /* Main.storyboard */; };
 		8E2268671B25DD83003804B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E2268661B25DD83003804B1 /* Images.xcassets */; };
 		8E22686A1B25DD83003804B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2268681B25DD83003804B1 /* LaunchScreen.xib */; };
@@ -29,7 +29,7 @@
 		8E22685A1B25DD83003804B1 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E22685E1B25DD83003804B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E22685F1B25DD83003804B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E2268611B25DD83003804B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E2268611B25DD83003804B1 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		8E2268641B25DD83003804B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E2268661B25DD83003804B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8E2268691B25DD83003804B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				8E22685F1B25DD83003804B1 /* AppDelegate.swift */,
-				8E2268611B25DD83003804B1 /* ViewController.swift */,
+				8E2268611B25DD83003804B1 /* QuizViewController.swift */,
 				8E2268631B25DD83003804B1 /* Main.storyboard */,
 				8E2268661B25DD83003804B1 /* Images.xcassets */,
 				8E2268681B25DD83003804B1 /* LaunchScreen.xib */,
@@ -157,7 +157,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
-				ORGANIZATIONNAME = "LDS Missionary";
+				ORGANIZATIONNAME = "Bryan Robinson";
 				TargetAttributes = {
 					8E2268591B25DD83003804B1 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E2268621B25DD83003804B1 /* ViewController.swift in Sources */,
+				8E2268621B25DD83003804B1 /* QuizViewController.swift in Sources */,
 				8E2268601B25DD83003804B1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +343,7 @@
 				INFOPLIST_FILE = Quiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -353,6 +354,7 @@
 				INFOPLIST_FILE = Quiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -409,6 +411,7 @@
 				8E22687B1B25DD83003804B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E22687C1B25DD83003804B1 /* Build configuration list for PBXNativeTarget "QuizTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +420,7 @@
 				8E22687E1B25DD83003804B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
