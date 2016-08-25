@@ -36,41 +36,41 @@ class QuizViewController: UIViewController {
     
     @IBAction func onTapShowQuestion(sender: AnyObject) {
         let targetQuestionText = questions[self.currentIndex]
-        self.lblQuestion.text = targetQuestionText
-        self.btnShowAnswer.enabled = true
-        self.btnShowQuestion.enabled = false
+        lblQuestion.text = targetQuestionText
+        btnShowAnswer.isEnabled = true
+        btnShowQuestion.isEnabled = false
     }
     
     @IBAction func onTapShowAnswer(sender: AnyObject) {
         let targetAnswerText = answers[self.currentIndex]
-        self.lblAnswer.text = targetAnswerText
-        self.currentIndex++
+        lblAnswer.text = targetAnswerText
+        currentIndex += 1
         
         if self.currentIndex == questions.count {
-            self.showEndofQuiz()
-            self.resetQuiz()
+            showEndofQuiz()
+            resetQuiz()
         }
         
-        self.btnShowAnswer.enabled = false
-        self.btnShowQuestion.enabled = true
+        self.btnShowAnswer.isEnabled = false
+        self.btnShowQuestion.isEnabled = true
     }
     
     func showEndofQuiz() {
-        var alert = UIAlertController(title: "Congratulations", message: "You have finished the quiz", preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "Got it! Start over!", style: UIAlertActionStyle.Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
+        let alert = UIAlertController(title: "Congratulations", message: "You have finished the quiz", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Got it! Start over!", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     func resetQuiz() {
-        self.currentIndex = 0
-        self.lblQuestion.text = "???"
-        self.lblAnswer.text = "???"
+        currentIndex = 0
+        lblQuestion.text = "???"
+        lblAnswer.text = "???"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.btnShowAnswer.enabled = false
+        self.btnShowAnswer.isEnabled = false
     }
 
     override func didReceiveMemoryWarning() {
